@@ -1,0 +1,9 @@
+h1{
+  color: darkcyan;
+}
+
+.temp{
+  color: grey;
+}
+
+/* @import './temp.scss'; */
