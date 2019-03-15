@@ -60,8 +60,8 @@ module.exports = (env, options) => {
         favicon: "./src/favicon.ico"
       }),
       new MiniCssExtractPlugin({
-        filename: devMode ? '[name].css' : '[name].[hash].css', // bug, not working as expected
-        chunkFilename: devMode ? '[id].css' : '[id].[hash].css', // https://github.com/webpack-contrib/mini-css-extract-plugin#advanced-configuration-example
+        filename: devMode ? '[name].css' : '[name].[hash].css',
+        chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
       }),
       new webpack.HotModuleReplacementPlugin()
     ]
